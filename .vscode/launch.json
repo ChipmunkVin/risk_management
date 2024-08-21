@@ -1,0 +1,60 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run riskmanagementv1",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "PreLaunchTask for Run riskmanagementv1",
+      "envFile": "${workspaceFolder}/env/.env1",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/riskmanagementv1\\\",\\\"profileName\\\":\\\"\\\"}\"}"
+      }
+    },
+    {
+      "name": "Business Partner (A2X)",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/",
+      "preLaunchTask": "dev-project",
+      "envFile": "${workspaceFolder}/env/.env2",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/riskmanagementv1/\\\",\\\"profileName\\\":\\\"\\\"}\"}"
+      }
+    },
+    {
+      "name": "Run riskmanagementv1 with live data",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "PreLaunchTask for Run riskmanagementv1 with live data",
+      "envFile": "${workspaceFolder}/env/.env3",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/riskmanagementv1\\\",\\\"profileName\\\":\\\"\\\"}\"}",
+        "runConfigurations": "{\"odataBinding\":{\"BusinessPartnerA2X\":{\"destination\":\"apihub_sandbox\",\"type\":\"Destination\",\"path\":\"s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER\"}}}"
+      }
+    }
+  ]
+}
